@@ -1,5 +1,5 @@
 
-import HomePage from '../examples/homePage';
+import HomePage from '../cypress/homePage';
 
 describe('Publish Article', () => {
   it('going to home page', () => {

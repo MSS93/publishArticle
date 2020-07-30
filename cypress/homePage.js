@@ -1,6 +1,6 @@
-import Header from '../examples/header';
-import SignInPage from '../examples/signin';
-import PublishPage from '../examples/publish';
+import Header from '../cypress/header';
+import SignInPage from '../cypress/signin';
+import PublishPage from '../cypress/publish';
 
 class HomePage {
   constructor() {
@@ -9,10 +9,6 @@ class HomePage {
   
   visit() {
     cy.visit('https://demo.productionready.io/#/')
-  }
-  
-  getUserAvatar() {
-    return cy.get('[data-testid=UserAvatar]');
   }
   
   goToSignIn() {
